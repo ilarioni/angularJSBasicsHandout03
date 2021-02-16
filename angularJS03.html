@@ -113,5 +113,26 @@ ng-pristine
     </script>
 
 
+<h4> Or </h4>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <p>First name: {{firstname}}</p>
+        <p>First name: {{lastname}}</p>
+        
+    </div>
+    
+    <script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+        $scope.firstname = "John";
+        $scope.lastname = "Doe";    
+    });
+    </script>
+    
+    <p>You can use double braces to display content from the data model.</p>
+
+    
+
+
 </body>
 </html>
