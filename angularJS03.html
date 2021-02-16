@@ -97,6 +97,21 @@ ng-pending
 ng-pristine
     -->
 
+    <h2>AngularJS Data Binding</h2>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <p ng-bind="firstname"></p>
+        <p ng-bind="lastname"></p>
+    </div>
     
+    <script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+        $scope.firstname = "ilia";
+        $scope.lastname = "Doe";    
+    });
+    </script>
+
+
 </body>
 </html>
