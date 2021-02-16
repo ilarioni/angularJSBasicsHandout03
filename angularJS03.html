@@ -71,22 +71,31 @@
         input.ng-invalid {
             background-color: lightblue;
         }
-        </style>
-        <body>
+    </style>
+    <body>
             
-        <form ng-app="" name="myForm">
-            Enter your name:
-            <input name="myName" ng-model="myText" required>
-        </form>
+    <form ng-app="" name="myForm">
+        Enter your name:
+        <input name="myName" ng-model="myText" required>
+    </form>
             
-        <p>Edit the text field and it will get/lose classes according to the status.</p>
-        <p><b>Note:</b> A text field with the "required" attribute is not valid when it is empty.</p>
-    
-    
+    <p>Edit the text field and it will get/lose classes according to the status.</p>
+    <p><b>Note:</b> A text field with the "required" attribute is not valid when it is empty.</p>
 
 
+    <!--
+The ng-model directive adds/removes the following classes, according to the status of the form field:
 
-    
+ng-empty
+ng-not-empty
+ng-touched
+ng-untouched
+ng-valid
+ng-invalid
+ng-dirty
+ng-pending
+ng-pristine
+    -->
 
     
 </body>
